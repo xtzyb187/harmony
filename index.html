@@ -13,26 +13,974 @@
     <section class="page-header">
       <h1 class="project-name">知鸟开放平台</h1>
       <h2 class="project-tagline"></h2>
-      <a href="https://github.com/xtzyb187/zhiniao.githup.com" class="btn">View on GitHub</a>
-      <a href="https://github.com/xtzyb187/zhiniao.githup.com/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/xtzyb187/zhiniao.githup.com/tarball/master" class="btn">Download .tar.gz</a>
+      <a href="https://github.com/xtzyb187/zhiniao" class="btn">View on GitHub</a>
+      <a href="https://github.com/xtzyb187/zhiniao/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/xtzyb187/zhiniao/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <p>欢迎您成为知鸟开放平台的开发者。</p>
+      <h1>
+<a id="概述" class="anchor" href="#%E6%A6%82%E8%BF%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>概述</h1>
 
-<p>知鸟是企业专属移动学习平台。</p>
+<hr>
 
-<p>当您成功注册为开发者，可以通过本文档所描述的接口创建知鸟微应用，为企业实现更多丰富且个性化的企业移动应用。</p>
+<p>欢迎您成为知鸟开放平台的开发者。知鸟是企业专属移动学习平台。当您成功注册为开发者，可以通过本文档所描述的接口创建知鸟微应用，为企业实现更多丰富且个性化的企业移动应用。</p>
 
 <p>假如你是企业用户，要为自己的公司开发微应用，查看企业接入指南。</p>
 
-<p>假如你是ISV(服务提供商)，作为第三方要给其他公司提供微应用，先查看ISV接入指南。</p>
-
 <p>开发者可以通过以下方式了解更多关于知鸟开放平台的消息：</p>
 
+<ul>
+<li>1 <a href="mailto:zhiniao@pingan.com">zhiniao@pingan.com</a>
+</li>
+<li>2 <a href="http://www.zhi-niao.com">www.zhi-niao.com</a>
+</li>
+</ul>
+
+<h1>
+<a id="企业接入指南" class="anchor" href="#%E4%BC%81%E4%B8%9A%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>企业接入指南</h1>
+
+<hr>
+
+<p>此处为企业接入微应用的快速指南，您可以将已有系统快速接入知鸟，也可以独立开发一个微应用按步骤接入知鸟。您需要经过以下几步：</p>
+
+<ul>
+<li>1 <a href="http://www.zhi-niao.com">Step-1: 企业自助签约流程</a>
+</li>
+<li>2 <a href="http://www.zhi-niao.com">Step-2: 新增微应用</a>
+</li>
+<li>3 <a href="http://www.zhi-niao.com">Step-3: 配置微应用</a> </li>
+<li>3 <a href="http://www.zhi-niao.com">Step-4: 开发微应用</a> </li>
+</ul>
+
+<h2>
+<a id="企业自助签约流程" class="anchor" href="#%E4%BC%81%E4%B8%9A%E8%87%AA%E5%8A%A9%E7%AD%BE%E7%BA%A6%E6%B5%81%E7%A8%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>企业自助签约流程</h2>
+
+<p>一、进入知鸟后台，注册知鸟企业账号。</p>
+
+<p>二、输入企业基本信息。</p>
+
+<p>三、通过知鸟后台，完成员工信息导入。</p>
+
+<h2>
+<a id="新增微应用" class="anchor" href="#%E6%96%B0%E5%A2%9E%E5%BE%AE%E5%BA%94%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>新增微应用</h2>
+
+<p>注册成为知鸟企业账号后，就可以进入知鸟后台，知鸟设置里面新增微应用了。</p>
+
+<p>知鸟设置，选择微应用tab。</p>
+
+<p><img src="http://7rylau.com1.z0.glb.clouddn.com/home.PNG" alt="image"></p>
+
+<p>点击<strong>新增微应用</strong>，按下图信息填写微应用信息</p>
+
+<p><img src="https://img.alicdn.com/tps/TB1Qe_XJFXXXXalXpXXXXXXXXXX-598-477.png" alt="image"></p>
+
+<p>首页地址 : 以http://或者https:// 开头的URL，是微应用的首页地址；在移动设备上打开相应的微应用将访问这个URL指向的页面。</p>
+
+<p>新增微应用提交成功后，会得到微应用的AppID和AppSecret。</p>
+
+<h2>
+<a id="配置微应用" class="anchor" href="#%E9%85%8D%E7%BD%AE%E5%BE%AE%E5%BA%94%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>配置微应用</h2>
+
+<p>应用创建成功后，需要在知鸟后台配置微应用，APP上才可以看到</p>
+
+<p>知鸟设置，自定义首页</p>
+
+<p><img src="http://7rylau.com1.z0.glb.clouddn.com/111111111111111111111111.PNG" alt="image"></p>
+
+<p>在头条，自定义频道，自定义栏目里面都可以配置微应用</p>
+
+<p><img src="http://7rylau.com1.z0.glb.clouddn.com/111111111111111111111111112.PNG" alt="image"></p>
+
+<h2>
+<a id="开发微应用" class="anchor" href="#%E5%BC%80%E5%8F%91%E5%BE%AE%E5%BA%94%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>开发微应用</h2>
+
+<p>知鸟开放提供丰富的接口、工具供您使用，用以降低您的开发成本：</p>
+
+<p>知鸟开放平台提供了定制的微应用在知鸟客户端的专用运行容器，并提供了一组可以调用知鸟的本地能力和业务能力的JSApi接口，您可以通过这些接口使用知鸟的本地能力或者知鸟的业务逻辑，进行微应用与知鸟功能的结合；接口使用可以参考客户端开发文档。</p>
+
+<h1>
+<a id="服务端开发文档" class="anchor" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>服务端开发文档</h1>
+
+<hr>
+
+<h2>
+<a id="获取accesstoken" class="anchor" href="#%E8%8E%B7%E5%8F%96accesstoken" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>获取AccessToken</h2>
+
+<p>AccessToken是企业访问知鸟开放平台接口的全局唯一票据，调用接口时需携带AccessToken。</p>
+
+<p>AccessToken需要用AppID和AppSecret来换取，不同的AppSecret会返回不同的AccessToken。正常情况下AccessToken有效期为7200秒，有效期内重复获取返回相同结果，并自动续期。</p>
+
+<p><strong>请求说明</strong></p>
+
+<p>https请求方式: GET <a href="https://oapi.zhi-niao.com/gettoken?appid=id&amp;appsecret=secrect">https://oapi.zhi-niao.com/gettoken?appid=id&amp;appsecret=secrect</a></p>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appid</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">应用ID</td>
+</tr>
+<tr>
+<td>appsecret</td>
+<td align="center">string</td>
+<td align="right">否</td>
+<td align="right">应用密钥</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>返回说明</strong></p>
+
+<p>正确的返回结果</p>
+
+<pre><code>{
+"errcode": 0,
+"errmsg": "ok",
+"access_token": "返回用户凭证"
+}
+</code></pre>
+
+<p>错误的返回结果</p>
+
+<pre><code>{
+"errcode": 400,
+"errmsg": "错误信息"
+}
+</code></pre>
+
+<h2>
+<a id="获取jsapi_ticket" class="anchor" href="#%E8%8E%B7%E5%8F%96jsapi_ticket" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>获取jsapi_ticket</h2>
+
+<p>企业在使用微应用中的JS API时，需要先从知鸟开放平台接口获取jsapi_ticket生成签名数据，并将最终签名用的部分字段及签名结果返回到H5中，JS API底层将通过这些数据判断H5是否有权限使用JS API。</p>
+
+<p><strong>请求说明</strong></p>
+
+<p>https请求方式: GET <a href="https://oapi.zhi-niao.com/get_jsapi_ticket?access_token=ACCESS_TOKE">https://oapi.zhi-niao.com/get_jsapi_ticket?access_token=ACCESS_TOKE</a></p>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">接口凭证</td>
+</tr>
+<tr>
+<td>type</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">固定值jsapi</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>返回说明</strong>
+正确的返回结果</p>
+
+<pre><code>{
+"errcode": 0,
+"errmsg": "ok",
+"expires_in": 7200
+"ticket": "JS API的临时票据"
+}
+</code></pre>
+
+<p>错误的返回结果</p>
+
+<pre><code>{
+"errcode": 400,
+"errmsg": "错误信息"
+}
+</code></pre>
+
+<h1>
+<a id="客户端开发文档" class="anchor" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>客户端开发文档</h1>
+
+<hr>
+
+<h2>
+<a id="新手引导" class="anchor" href="#%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>新手引导</h2>
+
+<p>在开发微应用之前，需要了解知鸟开放平台对微应用的定义。知鸟微应用是指借助知鸟平台提供的本地能力和业务能力API，开发的html5应用。</p>
+
+<p>调用JS-API需要引入js文件zhiniaoapi.js。js文件版本在添加升级功能时地址会变化，如有需要（比如要使用新增的js-api）,请随时关注地址变更。但是旧版本js文件也将一直可用。</p>
+
+<p><a href="http://js.zhi-niao.com/3.3.4/scripts/zhiniaoapi.js">http://js.zhi-niao.com/3.3.4/scripts/zhiniaoapi.js</a></p>
+
+<p>直接引入zhiniaoapi.js会得到一个全局变量zn，支持amd、cmd引入方式。全局变量zn，注意全局变量命名不能有冲突。</p>
+
+<h2>
+<a id="授权认证" class="anchor" href="#%E6%8E%88%E6%9D%83%E8%AE%A4%E8%AF%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>授权认证</h2>
+
+<p>知鸟JS API安全验证，只有经过安全验证的微应用才能调用安全级别较高的API。
+如果开发者想使用知鸟开放的jsapi接口，需要经过以下流程：</p>
+
+<ul>
+<li>1 <a href="http://www.zhi-niao.com">获取jsapi_ticket</a>
+</li>
+<li>2 <a href="http://www.zhi-niao.com">JS-API权限签名算法，生成签名</a>
+</li>
+<li>3 <a href="http://www.zhi-niao.com">JS API安全验证</a>
+</li>
+</ul>
+
+<h3>
+<a id="js-api权限签名算法" class="anchor" href="#js-api%E6%9D%83%E9%99%90%E7%AD%BE%E5%90%8D%E7%AE%97%E6%B3%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JS-API权限签名算法</h3>
+
+<p>签名生成的规则：</p>
+
+<p>List keyArray = sort(noncestr,timestamp,jsapi_ticket,url);</p>
+
+<p>String str = assemble(keyArray);</p>
+
+<p>signature = sha1(str);</p>
+
+<p>参与签名的字段包括在上文中获取的jsapi_ticket，noncestr（随机字符串，自己随便填写即可）,timestamp（当前时间戳，具体值为当前时间到1970年1月1号的秒数）,url（当前网页的URL，不包含#及其后面部分）。例如：</p>
+
+<p>noncestr=Zn4zmLFKD0wzilzM
+jsapi_ticket=mS5k98fdkdgDKxkXGEs8LORVREiweeWETE40P37wkidkfksDSKDJFD5h9nbSlYy3-Sl-HhTdfl2fzFy1AOcKIDU8l
+timestamp=1414588745
+url=<a href="http://www.zhi-niao.com">http://www.zhi-niao.com</a></p>
+
+<p>步骤1. sort()含义为对所有待签名参数按照字段名的ASCII 码从小到大排序（字典序）</p>
+
+<p>步骤2. assemble()含义为根据步骤1中获的参数字段的顺序，使用URL键值对的格式（即key1=value1&amp;key2=value2…）拼接成字符串</p>
+
+<p>步骤2. sha1()的含义为对在步骤2拼接好的字符串进行sha1加密。</p>
+
+<h3>
+<a id="js-api安全验证" class="anchor" href="#js-api%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JS API安全验证</h3>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appid</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">应用ID</td>
+</tr>
+<tr>
+<td>companyid</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">企业ID</td>
+</tr>
+<tr>
+<td>timeStamp</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">生成签名的时间戳</td>
+</tr>
+<tr>
+<td>random</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">生成签名的随机串</td>
+</tr>
+<tr>
+<td>signature</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">签名</td>
+</tr>
+<tr>
+<td>apis</td>
+<td align="center">string</td>
+<td align="right">是</td>
+<td align="right">需要调用的jsapi列表</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>代码示例</strong></p>
+
+<pre><code>zn.config({
+appid: '', // 必填，微应用ID
+companyid: '',//必填，企业ID
+timeStamp: , // 必填，生成签名的时间戳
+random: '', // 必填，生成签名的随机串
+signature: '', // 必填，签名
+apis: ['', ''] // 必填，需要使用的jsapi列表
+});
+</code></pre>
+
+<p><strong>验证成功</strong></p>
+
+<p>zn.ready参数为回调函数，在环境准备就绪时触发，jsapi的调用需要保证在该回调函数触发后调用，否则无效。</p>
+
+<pre><code>zn.ready(function(){
+;
+});
+</code></pre>
+
+<p><strong>验证失败</strong></p>
+
+<p>config信息验证失败会执行error函数，错误信息可以在返回的error参数中参看</p>
+
+<pre><code>dd.error(function(error){
+;
+});
+</code></pre>
+
+<h2>
+<a id="接口约定" class="anchor" href="#%E6%8E%A5%E5%8F%A3%E7%BA%A6%E5%AE%9A" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>接口约定</h2>
+
+<ul>
+<li>1所有接口都为异步</li>
+<li>2接受一个JSONObject类型的参数</li>
+<li>3成功回调 onSuccess</li>
+<li>4失败回调 onFail</li>
+</ul>
+
+<p><strong>接口示例</strong></p>
+
+<pre><code>zn.方法({
+参数1: '',
+参数2: '',
+onSuccess: function(result) {
+//成功回调
+/*
+{
+    //所有返回信息都输出在这里
+}*/
+},
+onFail: function(){
+//失败回调
+}
+})
+</code></pre>
+
+<h2>
+<a id="demo和调试" class="anchor" href="#demo%E5%92%8C%E8%B0%83%E8%AF%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DEMO和调试</h2>
+
+<p>我们提供了Demo和开发版知鸟给您的开发提供方便，如果对调用参数有疑问，请使用开发版知鸟调试。对jsapi用法有疑问，可查看Demo.</p>
+
+<p>*<em>微应用DEMO地址: *</em> <a href="http://www.zhi-niao.com">http://www.zhi-niao.com</a></p>
+
+<p>*<em>知鸟开发版下载地址: *</em> <a href="http://www.zhi-niao.com">http://www.zhi-niao.com</a></p>
+
+<h2>
+<a id="js-api文档" class="anchor" href="#js-api%E6%96%87%E6%A1%A3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JS-API文档</h2>
+
+<h3>
+<a id="工具方法" class="anchor" href="#%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>工具方法</h3>
+
+<p>命名空间 zn.utils</p>
+
+<h4>
+<a id="发起网络请求" class="anchor" href="#%E5%8F%91%E8%B5%B7%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>发起网络请求</h4>
+
+<p>zn.utils.request</p>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td align="center">String</td>
+<td align="right">是</td>
+<td align="right">请求url</td>
+</tr>
+<tr>
+<td>params</td>
+<td align="center">JSONObject</td>
+<td align="right">否</td>
+<td align="right">请求参数</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>info</td>
+<td align="center">JSONObject</td>
+<td align="right">请求数据</td>
+</tr>
+<tr>
+<td>type</td>
+<td align="center">String</td>
+<td align="right">类型</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.utils.request({
+onSuccess : function(data) {
+    /*
+    {
+        type: '1',
+        info: {}
+    }
+    */
+},
+onFail : function(err) {},
+url:'http://www.zhi-niao.com',
+params:{}
+});
+</code></pre>
+
+<h4>
+<a id="下载图片" class="anchor" href="#%E4%B8%8B%E8%BD%BD%E5%9B%BE%E7%89%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>下载图片</h4>
+
+<p>zn.utils.download</p>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>imageArray</td>
+<td align="center">String[]</td>
+<td align="right">是</td>
+<td align="right">下载图片数组</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td align="center">String</td>
+<td align="right">下载结果</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.utils.download({
+onSuccess : function(data) {
+    /*
+    {
+        result: '1',
+    }
+    */
+},
+onFail : function(err) {},
+imageArray:['http://www.zhi-niao.com','http://www.zhi-niao.com']
+});
+</code></pre>
+
+<h4>
+<a id="添加埋点" class="anchor" href="#%E6%B7%BB%E5%8A%A0%E5%9F%8B%E7%82%B9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>添加埋点</h4>
+
+<p>zn.utils.talkingdata</p>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td align="center">String</td>
+<td align="right">是</td>
+<td align="right">埋点事件</td>
+</tr>
+<tr>
+<td>label</td>
+<td align="center">String</td>
+<td align="right">是</td>
+<td align="right">埋点标签</td>
+</tr>
+<tr>
+<td>params</td>
+<td align="center">JSONObject</td>
+<td align="right">是</td>
+<td align="right">埋点内容</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td align="center">String</td>
+<td align="right">结果</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.utils.talkingdata({
+onSuccess : function(data) {
+    /*
+    {
+        result: '1',
+    }
+    */
+},
+onFail : function(err) {},
+event:‘login001'，
+label:'登录'，
+params:{}
+});
+</code></pre>
+
+<h4>
+<a id="获取用户信息" class="anchor" href="#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>获取用户信息</h4>
+
+<p>zn.utils.userinfo</p>
+
+<p><strong>参数说明</strong></p>
+
+<p>无需参数</p>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userid</td>
+<td align="center">String</td>
+<td align="right">用户id</td>
+</tr>
+<tr>
+<td>companyid</td>
+<td align="center">String</td>
+<td align="right">用户公司id</td>
+</tr>
+<tr>
+<td>username</td>
+<td align="center">String</td>
+<td align="right">用户名</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.utils.userinfo({
+onSuccess : function(data) {
+    /*
+    {
+        result: '1',
+        userid: '100001',
+        companyid: '101',
+        username: '鸟宝'
+    }
+    */
+},
+onFail : function(err) {}
+});
+</code></pre>
+
+<h4>
+<a id="开启摇一摇" class="anchor" href="#%E5%BC%80%E5%90%AF%E6%91%87%E4%B8%80%E6%91%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>开启摇一摇</h4>
+
+<p>zn.utils.shake</p>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flag</td>
+<td align="center">String</td>
+<td align="right">是</td>
+<td align="right">是否开启</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td align="center">String</td>
+<td align="right">结果</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.utils.shake({
+onSuccess : function(data) {
+    /*
+    {
+        result: '1',
+    }
+    */
+},
+onFail : function(err) {},
+flag:‘true'，\\true：开启，false：关闭
+});
+</code></pre>
+
+<h3>
+<a id="ui组件" class="anchor" href="#ui%E7%BB%84%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>UI组件</h3>
+
+<p>命名空间 zn.interface</p>
+
+<h4>
+<a id="显示进度条" class="anchor" href="#%E6%98%BE%E7%A4%BA%E8%BF%9B%E5%BA%A6%E6%9D%A1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>显示进度条</h4>
+
+<p>zn.interface.showloading    </p>
+
+<p><strong>参数说明</strong>
+无需参数</p>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td align="center">String</td>
+<td align="right">结果</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.interface.showloading({
+onSuccess : function(data) {
+    /*
+    {
+        result: '1',
+    }
+    */
+},
+onFail : function(err) {},
+});
+</code></pre>
+
+<h4>
+<a id="关闭进度条" class="anchor" href="#%E5%85%B3%E9%97%AD%E8%BF%9B%E5%BA%A6%E6%9D%A1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>关闭进度条</h4>
+
+<p>zn.interface.closeloading   </p>
+
+<p><strong>参数说明</strong>
+无需参数</p>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td align="center">String</td>
+<td align="right">结果</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.interface.closeloading({
+onSuccess : function(data) {
+    /*
+    {
+        result: '1',
+    }
+    */
+},
+onFail : function(err) {},
+});
+</code></pre>
+
+<h4>
+<a id="显示alert" class="anchor" href="#%E6%98%BE%E7%A4%BAalert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>显示Alert</h4>
+
+<p>zn.interface.showAlert</p>
+
+<p><strong>参数说明</strong>
+无需参数</p>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td align="center">String</td>
+<td align="right">结果</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.interface.showAlert({
+onSuccess : function(data) {
+    /*
+    {
+        result: '1',
+    }
+    */
+},
+onFail : function(err) {},
+});
+</code></pre>
+
+<h4>
+<a id="刷新导航栏" class="anchor" href="#%E5%88%B7%E6%96%B0%E5%AF%BC%E8%88%AA%E6%A0%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>刷新导航栏</h4>
+
+<p>zn.interface.refreshNav</p>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td align="center">String</td>
+<td align="right">是</td>
+<td align="right">导航栏类型</td>
+</tr>
+<tr>
+<td>title</td>
+<td align="center">String</td>
+<td align="right">是</td>
+<td align="right">导航栏标题</td>
+</tr>
+<tr>
+<td>right</td>
+<td align="center">String</td>
+<td align="right">是</td>
+<td align="right">导航栏右侧按钮名称</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>返回说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td align="center">String</td>
+<td align="right">结果</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>示例</strong></p>
+
+<pre><code>zn.interface.refreshNav({
+onSuccess : function(data) {
+    /*
+    {
+        result: '1',
+    }
+    */
+},
+onFail : function(err) {},
+type: '1',\\1 做菜单按钮、搜索框 ；2 返回按钮、搜索框、搜索
+            3返回按钮、title、右边按钮； 4 返回按钮、title
+title: 'weka联盟',
+right: '搜索'
+});
+</code></pre>
+
+<h3>
+<a id="业务" class="anchor" href="#%E4%B8%9A%E5%8A%A1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>业务</h3>
+
+<p>命名空间 cn.business</p>
+
+<h4>
+<a id="打开应用内页面" class="anchor" href="#%E6%89%93%E5%BC%80%E5%BA%94%E7%94%A8%E5%86%85%E9%A1%B5%E9%9D%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>打开应用内页面</h4>
+
+<p>cn.business.open</p>
+
+<p><strong>参数说明</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th align="center">参数类型</th>
+<th align="right">必须</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td align="center">String</td>
+<td align="right">是</td>
+<td align="right">页面名称</td>
+</tr>
+<tr>
+<td>params</td>
+<td align="center">JSONObject</td>
+<td align="right">是</td>
+<td align="right">页面参数</td>
+</tr>
+</tbody>
+</table>
+
+<p>目前支持的页面：</p>
+
+<ul>
+<li>1 课程详情</li>
+<li>2 资讯详情</li>
+<li>3 话题详情</li>
+<li>4 二级页面</li>
+<li>5 特定页面</li>
+<li>6 排行榜</li>
+<li>7 个人中心</li>
+<li>8 播放课程</li>
+<li>9 下载课程</li>
+<li>10 公共频道</li>
+<li>11 课程专题</li>
+<li>12 扫一扫签到</li>
+</ul>
+
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/xtzyb187/zhiniao.githup.com">知鸟开放平台</a> is maintained by <a href="https://github.com/xtzyb187">xtzyb187</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/xtzyb187/zhiniao">知鸟开放平台</a> is maintained by <a href="https://github.com/xtzyb187">xtzyb187</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
